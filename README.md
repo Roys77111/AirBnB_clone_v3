@@ -155,7 +155,7 @@ No known bugs at this time.
 
 ## Authors
 Esere Ejenugbor - [Github](https://github.com/cuteweezy1) / [Twitter](https://twitter.com/esere_cynthia)  
-CHIKA Achebe Luke - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+CHIKA Achebe Luke - [Github](https://github.com/chukwukaoranile) / [Twitter](https://twitter.com/achebelc)
 
 Second part of Airbnb: Joann Vuong
 ## License
