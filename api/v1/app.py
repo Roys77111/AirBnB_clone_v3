@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module contains the principal application
+This module contains the principal application for RESTful API
 """
 from models import storage
 from api.v1.views import app_views
@@ -17,13 +17,13 @@ cors = CORS(app, resources={r"/api/*": {"origins": "0.0.0.0"}})
 
 @app.teardown_appcontext
 def close_db(obj):
-    """ calls methods close() """
+    """ Calling methods close() """
     storage.close()
 
 
 @app.errorhandler(404)
 def page_not_foun(error):
-    """ Loads a custom 404 page not found """
+    """ Loading a custom 404 page not found """
     return make_response(jsonify({"error": "Not found"}), 404)
 
 
