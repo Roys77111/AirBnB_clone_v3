@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module contains endpoint(route) status
+This module contains endpoint(route) status of the API
 """
 from models import storage
 from flask import Flask
@@ -11,7 +11,7 @@ from flask import jsonify
 @app_views.route('/status', strict_slashes=False)
 def status():
     """
-    Returns a JSON status
+    Function that returns a JSON status
     """
     return jsonify({"status": "OK"})
 
@@ -19,7 +19,7 @@ def status():
 @app_views.route('/stats', strict_slashes=False)
 def count():
     """
-    Retrieves the number of each objects by type
+    Retrieving the number of each objects by type
     """
     return jsonify({"amenities": storage.count("Amenity"),
                     "cities": storage.count("City"),
