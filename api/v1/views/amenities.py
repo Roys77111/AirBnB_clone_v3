@@ -12,7 +12,7 @@ from flasgger.utils import swag_from
 @app_views.route('/amenities', methods=['GET'], strict_slashes=False)
 @swag_from('documentation/amenity/get.yml', methods=['GET'])
 def get_all_amenities():
-    """ get amenities by id """
+    """ Getting amenities by id """
     all_list = [obj.to_dict() for obj in storage.all(Amenity).values()]
     return jsonify(all_list)
 
